@@ -16,3 +16,31 @@ bin-release/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+/target
+.cargo
+
+# compiled output
+/dist
+/tmp
+
+# dependencies
+/node_modules
+/bower_components
+
+# misc
+/.eslintcache
+/.sass-cache
+/connect.lock
+/coverage/*
+/coverage_*
+/local_uploads
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+.env
+docker-compose.override.yml
+*~
+src/schema.rs.orig
+.idea/
+

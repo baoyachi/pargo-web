@@ -1,0 +1,25 @@
+<HeadLayout />
+
+{{page-title "crates.io: Rust Package Registry" separator=' - ' prepend=true}}
+
+<ProgressBar/>
+<NotificationContainer @position="top-right"/>
+
+<Header/>
+
+<main local-class="main">
+  <div local-class="inner-main">
+    {{outlet}}
+  </div>
+</main>
+
+<Footer/>
+
+{{#if this.design.showToggleButton}}
+  <button type="button" local-class="toggle-design-button" {{on "click" this.design.toggle}}>
+    Toggle Design
+  </button>
+{{/if}}
+{{#if this.design.useNewDesign}}
+  {{set-body-class "new-design"}}
+{{/if}}

@@ -1,0 +1,19 @@
+<h1 data-test-404-header>Oops, that route doesn't exist!</h1>
+
+<form
+  local-class='p404'
+  data-test-404-search-form
+  {{on "submit" (prevent-default this.search)}}
+>
+  Perhaps a search of the site may help?
+
+  <Input
+    @type="text"
+    local-class="search-field"
+    placeholder="Search"
+    aria-label="Search"
+    @value={{this.header.searchValue}}
+    required={{true}}
+    data-test-404-search-input
+  />
+</form>
